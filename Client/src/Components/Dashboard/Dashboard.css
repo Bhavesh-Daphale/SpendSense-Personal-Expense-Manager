@@ -1,0 +1,95 @@
+/* Remove the default focus outline */
+
+*:hover,
+*:focus,
+*:active
+ {
+  outline: none;
+  box-shadow: none !important;
+}
+
+body{
+    background: var(--white);
+}
+
+::-webkit-scrollbar{
+    display: none;
+  }
+
+  
+
+
+/* Dashboard */
+
+.totals-heading{
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #919191;
+}
+
+.totals-amount{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1a1a1a;    
+}
+
+/* main content */
+
+
+.main-container{
+    width: 100vw;
+    height: 100vh;
+}
+
+.content{
+    background-color: var(--white);
+    height: 100%;
+}
+
+.dashboard-content{
+    height: calc(100% - 45px);
+    background-color: var(--white);
+} 
+
+.dashboard-list{
+    max-height: 80vh;
+    overflow-y: scroll;
+}
+
+
+.dashboard-item{
+    background-color:var(--lightgrey);;
+    border-radius: 7px;
+}
+.dashboard-item-heading{
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #4a4a4a;
+
+}
+
+.dashboard-item-text{
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #1d1d1d;
+
+}
+
+.activity-text{
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #1d1d1d;
+
+}
+
+.activity-date{
+    font-size: 0.6rem;
+    color: #1d1d1d;
+
+}
+
+.ratio-21x9 {
+    @include media-breakpoint-up(md) {
+      --bs-aspect-ratio: calc(9 / 16 * 100%); 
+    }
+  }
